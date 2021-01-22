@@ -2,27 +2,27 @@ package com.arztemis.online_grocery.model;
 
 public class DiscountedProducts {
 
-    private Integer id;
-    private String imageUrl;
+    private int id;
+    private int imageUrl;
 
-    public DiscountedProducts(Integer id, String imageUrl) {
+    public DiscountedProducts(int id, int imageUrl) {
         this.id = id;
         this.imageUrl = imageUrl;
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public String getImageUrl() {
+    public int getImageUrl() {
         return imageUrl;
     }
 
-    public void setImageUrl(String imageUrl) {
+    public void setImageUrl(int imageUrl) {
         this.imageUrl = imageUrl;
     }
 }
