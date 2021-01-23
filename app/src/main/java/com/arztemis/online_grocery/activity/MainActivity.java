@@ -12,15 +12,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.arztemis.online_grocery.R;
 import com.arztemis.online_grocery.adapter.DiscountedProductAdapter;
 import com.arztemis.online_grocery.adapter.GroceryAdapter;
+import com.arztemis.online_grocery.adapter.RecentlyItemsAdapter;
 import com.arztemis.online_grocery.model.DiscountedProducts;
 import com.arztemis.online_grocery.model.Grocery;
+import com.arztemis.online_grocery.model.RecentlyItem;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private RecyclerView rcDiscount, rcGrocery;
+    private RecyclerView rcDiscount, rcGrocery, rcRecentlyItems;
     private TextView tvSeemore;
 
     @Override
@@ -66,6 +68,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         rcGrocery.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,
                 false));
         rcGrocery.setAdapter(new GroceryAdapter(groceryList));
+
+        rcRecentlyItems = findViewById(R.id.rc_recentlyitem);
+
+        List<RecentlyItem> recentlyItems = new ArrayList<>();
+
+        recentlyItems.add(new RecentlyItem("Watermelon", "Watermelon has high water content and also provides some fiber.",
+                "₹ 80", "1", "KG", R.drawable.card4, R.drawable.b4));
+        recentlyItems.add(new RecentlyItem("Papaya", "Papayas are spherical or pear-shaped fruits that can be as long as 20 inches.",
+                "₹ 85", "1", "KG", R.drawable.card3, R.drawable.b3));
+        recentlyItems.add(new RecentlyItem("Strawberry", "The strawberry is a highly nutritious fruit, loaded with vitamin C.",
+                "₹ 30", "1", "KG", R.drawable.card2, R.drawable.b1));
+        recentlyItems.add(new RecentlyItem("Kiwi", "Full of nutrients like vitamin C, vitamin K, vitamin E, folate, and potassium.",
+                "₹ 30", "1", "PC", R.drawable.card1, R.drawable.b2));
+
+        rcRecentlyItems.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,
+                false));
+        rcRecentlyItems.setAdapter(new RecentlyItemsAdapter(this, recentlyItems));
 
     }
 

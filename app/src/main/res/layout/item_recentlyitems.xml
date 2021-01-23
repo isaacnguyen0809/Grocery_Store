@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cs_recentlyitem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp">
+
+
+    <ImageView
+        android:id="@+id/iv_card"
+        android:layout_width="150dp"
+        android:layout_height="220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card1" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/open_sans"
+        android:text="product_name"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/iv_card"
+        app:layout_constraintTop_toTopOf="@+id/iv_card" />
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/open_sans"
+        android:text="fingerprinticon"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/open_sans"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/tv_des"
+        app:layout_constraintTop_toBottomOf="@+id/tv_des" />
+
+    <TextView
+        android:id="@+id/tv_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="qty"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/tv_price"
+        app:layout_constraintTop_toTopOf="@+id/tv_price" />
+
+    <TextView
+        android:id="@+id/tv_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="unit"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/tv_qty"
+        app:layout_constraintTop_toTopOf="@+id/tv_qty" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add_shopping_cart_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>
