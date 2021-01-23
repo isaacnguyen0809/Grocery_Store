@@ -15,7 +15,7 @@ import java.util.List;
 
 public class DiscountedProductAdapter extends RecyclerView.Adapter<DiscountedProductAdapter.DiscountViewHolder> {
 
-    private List<DiscountedProducts> discountedProductsList;
+    private final List<DiscountedProducts> discountedProductsList;
 
     public DiscountedProductAdapter(List<DiscountedProducts> discountedProductsList) {
         this.discountedProductsList = discountedProductsList;
@@ -38,7 +38,7 @@ public class DiscountedProductAdapter extends RecyclerView.Adapter<DiscountedPro
         return discountedProductsList.size();
     }
 
-    public class DiscountViewHolder extends RecyclerView.ViewHolder {
+    public static class DiscountViewHolder extends RecyclerView.ViewHolder {
 
         ImageView imgdiscount;
 
