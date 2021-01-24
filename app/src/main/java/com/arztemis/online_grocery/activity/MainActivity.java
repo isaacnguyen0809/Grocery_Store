@@ -74,13 +74,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         List<RecentlyItem> recentlyItems = new ArrayList<>();
 
         recentlyItems.add(new RecentlyItem("Watermelon", "Watermelon has high water content and also provides some fiber.",
-                "₹ 80", "1", "KG", R.drawable.card4, R.drawable.b4));
+                "$ 80", "1", "KG", R.drawable.card4, R.drawable.b4));
         recentlyItems.add(new RecentlyItem("Papaya", "Papayas are spherical or pear-shaped fruits that can be as long as 20 inches.",
-                "₹ 85", "1", "KG", R.drawable.card3, R.drawable.b3));
+                "$ 85", "1", "KG", R.drawable.card3, R.drawable.b3));
         recentlyItems.add(new RecentlyItem("Strawberry", "The strawberry is a highly nutritious fruit, loaded with vitamin C.",
-                "₹ 30", "1", "KG", R.drawable.card2, R.drawable.b1));
+                "$ 30", "1", "KG", R.drawable.card2, R.drawable.b1));
         recentlyItems.add(new RecentlyItem("Kiwi", "Full of nutrients like vitamin C, vitamin K, vitamin E, folate, and potassium.",
-                "₹ 30", "1", "PC", R.drawable.card1, R.drawable.b2));
+                "$ 30", "1", "PC", R.drawable.card1, R.drawable.b2));
 
         rcRecentlyItems.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,
                 false));
